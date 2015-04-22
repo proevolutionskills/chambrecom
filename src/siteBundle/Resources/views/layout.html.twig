@@ -1,0 +1,422 @@
+
+{% block head %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>CCITNCH</title>
+	
+	<meta name="distributor" content="Global" />
+    <meta itemprop="contentRating" content="General" />
+    <meta name="robots" content="All" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="description" content="The source of truly unique and awesome jquery plugins." />
+    <meta name="keywords" content="slider, carousel, responsive, swipe, one to one movement, touch devices, jquery, plugin, bootstrap compatible, html5, css3" />
+    <meta name="author" content="w3widgets.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% block stylesheets %}
+    <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	
+	<!-- core CSS -->
+    <link href="{{asset('bundles/acceuil/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('bundles/acceuil/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('bundles/acceuil/css/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('bundles/acceuil/css/prettyPhoto.css')}}" rel="stylesheet">
+    <link href="{{asset('bundles/acceuil/css/main.css')}}" rel="stylesheet">
+    <link href="{{asset('bundles/acceuil/css/responsive.css')}}" rel="stylesheet">
+	
+	 <!--<link href="{{asset('bundles/acceuil/css/responsive-calendar.css')}}" rel="stylesheet">-->
+	 
+	
+    <link  href="{{asset('bundles/acceuil/css/jquery.e-calendar.css')}}" rel="stylesheet"/>	
+	<!-- Page styles -->
+	<link  href="{{asset('bundles/acceuil/css/demo.css')}}" rel='stylesheet' media='screen' />
+
+	<!-- OSX Style CSS files -->
+	<link  href="{{asset('bundles/acceuil/css/osx.css')}}" rel='stylesheet' media='screen' />
+	{% endblock stylesheets %}
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]--> 
+	
+    <link  href="{{asset('bundles/acceuil/images/ico/favicon.ico')}}" rel="shortcut icon">
+    <link  href="{{asset('bundles/acceuil/images/ico/apple-touch-icon-144-precomposed.png')}}" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link  href="{{asset('bundles/acceuil/images/ico/apple-touch-icon-114-precomposed.png')}}" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link  href="{{asset('bundles/acceuil/images/ico/apple-touch-icon-72-precomposed.png')}}" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link  href="{{asset('images/ico/apple-touch-icon-57-precomposed.png')}}" rel="apple-touch-icon-precomposed">
+	
+	<!--*****************************-->
+  
+        <!--*****************************-->
+
+
+{% endblock head %}	
+</head><!--/head-->
+
+<body class="homepage">
+
+    <header id="header">
+
+        <nav class="navbar navbar-inverse" role="banner" style="padding-top: 0px;">
+
+            <div class="container">
+			
+			 <div class="row">
+			
+			  <div class="col-sm-12">
+			   
+			    <div class="col-sm-8">
+			 <h4 style="color:#c52d2f;"><strong><center>Chambre de Commerce et d'Industrie Tuniso-Suisse</center></strong></h4></div>
+			
+			 <div class="col-sm-4">
+			<div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                            </ul>
+                            <div class="search">
+                                <form role="form">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                    <i class="fa fa-search" style="color:#000000;"></i>
+                                </form>
+                           </div>
+            </div>
+			</div>
+            </div>
+           
+            
+            <div class="col-sm-12" style="padding-left: 0px; padding-right: 0px;">                   
+					<div class="col-sm-1" style="padding-left: 0px; padding-right: 15px;">
+                     
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ path('acceuil_homepage')}}"> 
+						<img src="{{asset('bundles/acceuil/images/logo.png')}}" alt="logo" style="height: 75px;width: 75px;"></a>
+                </div>   
+              </div>
+			 
+					<div class="collapse navbar-collapse navbar-right " >
+					
+                    <ul class="nav navbar-nav">
+					
+					
+                        <li {% if app.request.get('_route') == 'acceuil_homepage' %} class="active"{% endif %} style="margin-left: 10px;"> 
+	                    <a href="{{ path('acceuil_homepage')}}" class="dropdown-toggle" data-toggle="dropdown" style="  padding-left: 5px;  padding-right: 5px;">Accueil <i class="fa fa-angle-down"></i></a>
+						<ul class="dropdown-menu">
+                               <li><a href="{{ path('acceuil_homepage')}}">Apropos </a></li>
+                               <li><a HREF="{{ path('acceuil_homepage')}}">Mot du président</a></li>
+                           
+                        </ul></li>
+						
+						
+                        <li {% if app.request.get('_route') == 'acceuil_services' %} class="active"{% endif %} style="margin-left: 10px;"><a href="{{ path('acceuil_services')}}" style="  padding-left: 5px;  padding-right: 5px;">Services</a></li>
+						
+						
+                        <li {% if app.request.get('_route') == 'acceuil_organisation' %} class="active"{% endif %} style="margin-left: 10px;"><a href="{{ path('acceuil_organisation')}}" style="  padding-left: 5px;  padding-right: 5px;">Organisation</a></li>
+						
+						
+                        <li  {% if app.request.get('_route') == 'acceuil_nosevenements' or  app.request.get('_route') == 'acceuil_networking' %} class="active"{% endif %} style="margin-left: 10px;">
+						<a href="{{ path('acceuil_nosevenements')}}" class="dropdown-toggle" data-toggle="dropdown" style="  padding-left: 5px;  padding-right: 5px;">Events <i class="fa fa-angle-down"></i></a>
+						    <ul class="dropdown-menu">
+                                <li><a href="{{ path('acceuil_nosevenements')}}">Nos évènements </a></li>
+                                <li><a href="{{ path('acceuil_networking')}}">Networking </a></li>
+                           
+                            </ul>
+							</li>
+							
+					    <li {% if app.request.get('_route') == 'acceuil_partenariat'  %} class="active"{% endif %}  style="margin-left: 10px;"><a href="{{ path('acceuil_partenariat') }}" style="  padding-left: 5px;  padding-right: 5px;">Partenariat </a></li>
+                        <li {% if 
+								app.request.get('_route') == 'acceuil_regime' or   
+								app.request.get('_route') == 'acceuil_cadre'  or
+								app.request.get('_route') == 'acceuil_jsuisse' or
+								app.request.get('_route') == 'acceuil_jtunis' or
+								app.request.get('_route') == 'acceuil_liens'					
+																
+								%} class="active"{% endif %} style="margin-left: 10px;">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="  padding-left: 5px;  padding-right: 5px;">Relations bilatérales <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('acceuil_regime') }}">Régimes et formalités d’importation </a></li>
+                                <li><a href="{{ path('acceuil_cadre') }}">Le cadre de l’investissement en Tunisie</a></li>
+                                <li><a href="{{ path('acceuil_jsuisse')}}">Les jours fériés suisses</a></li>
+                                <li><a href="{{ path('acceuil_jtunis')}}">Les jours fériés tunisiens</a></li>
+								<li><a href="{{ path('acceuil_liens')}}">Liens utiles </a></li>
+                            </ul>
+                        </li>
+						
+                        <li {% if app.request.get('_route') == 'acceuil_membre' %} class="active"{% endif %} style="margin-left: 10px;"><a href="{{ path('acceuil_membre')}}" style="  padding-left: 5px;  padding-right: 5px;">Devenir membre</a></li> 
+						
+                        <li {% if app.request.get('_route') == 'acceuil_contact' %} class="active"{% endif %} style="margin-left: 10px;"><a href="{{ path('acceuil_contact')}}" style="  padding-left: 5px;  padding-right: 5px;">Contact</a></li>                        
+                    </ul>
+
+					 </div>
+			</div> 
+			
+             </div>
+			 </div><!--/.container-->
+			
+        </nav><!--/nav-->
+		
+    </header><!--/header-->
+
+	
+{% block contenu %}{% endblock contenu %}
+{% block service %}{% endblock service %}
+{% block organisation %}{% endblock organisation %}
+{% block nosevenements %}{% endblock nosevenements %}	
+{% block networking %}{% endblock networking %}
+{% block partenariat %}{% endblock partenariat %}		
+{% block regime %}{% endblock regime %}	
+{% block cadre %}{% endblock cadre %}
+{% block ferierssuisses %}{% endblock ferierssuisses %}	 
+{% block ferierstunis %}{% endblock ferierstunis %}	
+{% block liens %}{% endblock liens %}
+{% block membre %}{% endblock membre %}
+{% block contact %}{% endblock contact %}
+{% block evenement %}{% endblock evenement %}
+{% block formulaire %}{% endblock formulaire %}
+			
+			
+ <footer id="footer" class="subfooter"  style="padding-bottom: 0px; padding-top: 10px;margin-bottom: 0px;">
+        <div class="container" style=" padding-right: 0px;   padding-left: 0px;">
+            <div class="row">
+				
+				<div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row" >
+			<div class="col-sm-3" style="   padding-left: 0px; padding-right: 0px;">
+                <div class="col-sm-6" style="   padding-left: 0px; padding-right: 0px;">
+                    <div class="widget">
+                        <h3 style="color:#ffffff; font-size:16px;"><a href="{{ path('acceuil_homepage')}}">Accueil </a></h3>
+						<ul style="list-style-type:disc;">
+						    <li><a href="{{ path('acceuil_homepage')}}" style="color:#ffffff; font-size:12.5px; font-weight:normal ">A propos</a></li>	
+                            <li><a href="#Mot" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Mot du président</a></li>
+                        </ul>
+					
+                    </div>    
+                </div>
+				 
+				<div class="col-sm-6" style="   padding-left: 0px; padding-right: 0px;">
+                    <div class="widget">
+					
+						<h3 style="color:#ffffff; font-size:16px;"><a href="{{ path('acceuil_services')}}">Services</a></h3>
+						<ul style="list-style-type:disc;">
+						    <li><a href="{{ path('acceuil_services')}}" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Conseil aux entreprises </a></li>	
+                            <li><a href="{{ path('acceuil_services')}}" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Mise en relation </a></li>	
+                            <li><a href="{{ path('acceuil_services')}}" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Recherche de partenariat</a></li> 
+							<li><a href="{{ path('acceuil_services')}}" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Réseautage</a></li>
+                        </ul>
+                    </div>    
+                </div>
+            </div> 
+			
+			  <div class="col-sm-3" style="   padding-left: 0px; padding-right: 0px;">
+                <div class="col-sm-6" style="   padding-left: 0px; padding-right: 0px;">
+                    <div class="widget">
+					
+                        <h3 style="color:#ffffff; font-size:16px;"> <a  href="{{ path('acceuil_organisation')}}"> Organisation</a></h3>
+						
+                       <ul style="list-style-type:disc;">
+						    <li><a href="#" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Historique </a></li>	
+                            <li><a href="#" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Sa vocation </a></li>
+							 <li><a href="#" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Qui sommes nous</a></li>
+							
+                        </ul> 
+						
+                    </div>    
+                </div>
+				
+				<div class="col-sm-6" style="   padding-left: 0px; padding-right: 0px;">
+                    <div class="widget">
+                       <h3 style="color:#ffffff; font-size:16px;"> <a href="{{ path('acceuil_nosevenements')}}">Events</a></h3>
+                        <ul style="list-style-type:disc;">
+                            <li><a href="{{ path('acceuil_nosevenements')}}" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Nos évenements</a></li>
+								
+                            <li><a href="{{ path('acceuil_networking')}}" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Networking</a></li>
+                        </ul>
+                    </div>    
+                </div>
+	          </div>
+				
+				<div class="col-sm-3" style="   padding-left: 0px; padding-right: 0px;">
+				<div class="col-sm-6" style="   padding-left: 0px; padding-right: 0px;">
+                    <div class="widget">
+					
+                        <h3 style="color:#ffffff; font-size:16px;"><a href="{{ path('acceuil_partenariat') }}">  Partenariat</a></h3>
+						<ul style="list-style-type:disc;">
+						    
+                            <li><a href="#" style="color:#ffffff; font-size:12.5px; font-weight:normal ">CTRS INVEST</a></li>
+							
+                            <li><a href="#" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Coaching pour les jeunes diplômés </a></li>
+							
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+				
+				<div class="col-sm-6" style="   padding-left: 0px; padding-right: 0px;">
+                    <div class="widget">
+                        <h3 style="color:#ffffff; font-size:16px;"><a href="#">Relations bilatérales</a></h3>
+                        <ul style="list-style-type:disc;">
+                            <li><a href="{{ path('acceuil_regime') }}" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Régimes et formalités d’importation </a></li>
+							
+                            <li><a href="{{ path('acceuil_cadre') }}" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Le cadre de l’investissement en Tunisie</a></li>
+						
+							 <li><a href="{{ path('acceuil_jsuisse')}}" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Les jours fériés suisses</a></li>
+							
+                            <li><a href="{{ path('acceuil_jtunis')}}" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Les jours fériés tunisiens</a></li>
+							
+							 <li><a href="{{ path('acceuil_liens')}}" style="color:#ffffff; font-size:12.5px; font-weight:normal ">Liens utiles </a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-3-->
+				</div>
+				
+				<div class="col-sm-3" style="   padding-left: 0px; padding-right: 0px;">
+				<div class="col-sm-6" style="   padding-left: 0px; padding-right: 0px;">
+                    <div class="widget">
+                        <h3 style="color:#ffffff; font-size:16px;"><a href="{{ path('acceuil_membre')}}">Devenir membre de la CCITNCH</a></h3>
+                        
+                    </div>    
+                </div>
+				
+			    <div class="col-sm-6" style="   padding-left: 0px; padding-right: 0px;">
+                    <div class="widget">
+                        
+                        <h3 style="color:#ffffff; font-size:16px;"> <a  href="{{ path('acceuil_contact')}}"> Contact </a></h3>
+                    </div>    
+                </div>
+			</div>
+			
+            </div>
+        </div>
+				
+            </div>
+        </div>
+		
+		
+		
+    </footer><!--/#footer-->
+	
+	
+	<div class="subfooter" style="border-top-width: 0px;padding-top: 0px;">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-md-12">
+								<nav class="navbar navbar-default" role="navigation" style="padding-top: 0px;">
+									<!-- Toggle get grouped for better mobile display -->
+								 
+								<div class="col-sm-6">	</div>
+								<div class="col-sm-6">	
+									<div class="collapse navbar-collapse" id="navbar-collapse-2">
+										<ul class="nav navbar-nav">
+											<li style="padding-bottom: 0px;"><a href="{{ path('acceuil_homepage')}}" style="padding-top: 0px;padding-bottom: 0px;">Accueil</a></li>
+											<li style="padding-bottom: 0px;"><a href="{{ path('acceuil_membre')}}" style="padding-top: 0px;padding-bottom: 0px;">Devenir membre</a></li>
+											<li style="padding-bottom: 0px;"><a href="{{ path('acceuil_contact')}}" style="padding-top: 0px;padding-bottom: 0px;">Contact</a></li>
+										</ul>
+									</div>
+									</div>
+								
+								</nav>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- .subfooter end -->
+    <script src="{{asset('bundles/acceuil/js/jquery.js')}}"></script>
+    <script src="{{asset('bundles/acceuil/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('bundles/acceuil/js/jquery.prettyPhoto.js')}}"></script>
+    <script src="{{asset('bundles/acceuil/js/jquery.isotope.min.js')}}"></script>
+    <script src="{{asset('bundles/acceuil/js/main.js')}}"></script>
+    <script src="{{asset('bundles/acceuil/js/wow.min.js')}}"></script>
+	<script>$(document).ready(function(){
+
+           // $("body").hide();
+           // $("body").fadeIn();      
+            $("#p1").hide();
+            $("#a1").on("click",function(){
+
+                        $("#p1").slideToggle();
+						$("#a1").hide();           
+                                   
+                                   });  
+							   
+            });
+</script>
+<script>$(document).ready(function(){
+
+           // $("body").hide();
+           // $("body").fadeIn();      
+            $("#p2").hide();
+            $("#a2").on("click",function(){
+
+                        $("#p2").slideToggle();
+						$("#a2").hide();           
+                                   
+                                   });  
+							   
+            });
+</script>
+<script>$(document).ready(function(){
+
+           // $("body").hide();
+           // $("body").fadeIn();      
+            $("#p3").hide();
+            $("#a3").on("click",function(){
+
+                        $("#p3").slideToggle();
+						$("#a3").hide();           
+                                   
+                                   });  
+							   
+            });
+</script>
+<script>$(document).ready(function(){
+
+           // $("body").hide();
+           // $("body").fadeIn();      
+            $("#p4").hide();
+            $("#a4").on("click",function(){
+
+                        $("#p4").slideToggle();
+						$("#a4").hide();           
+                                   
+                                   });  
+							   
+            });
+</script>
+<script>$(document).ready(function(){
+
+           // $("body").hide();
+           // $("body").fadeIn();      
+            $("#p5").hide();
+            $("#a5").on("click",function(){
+
+                        $("#p5").slideToggle();
+						$("#a5").hide();           
+                                   
+                                   });  
+							   
+            });
+</script>
+
+
+<script type="text/javascript" src="{{asset('bundles/acceuil/js/jquery-1.11.0.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('bundles/acceuil/js/jquery.e-calendar.js')}}"></script>
+<script type="text/javascript" src="{{asset('bundles/acceuil/index.js')}}"></script>
+	
+<script type='text/javascript' src="{{asset('bundles/acceuil/js/jquery.simplemodal.js')}}"></script>
+<script type='text/javascript' src="{{asset('bundles/acceuil/js/osx.js')}}"></script>	
+										
+</body>
+</html>

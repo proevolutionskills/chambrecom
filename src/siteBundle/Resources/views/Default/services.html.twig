@@ -1,0 +1,86 @@
+{% extends "acceuilBundle::layout.html.twig" %}
+{% block service %}
+	<section>
+       <!-- <div class="container">-->
+             
+	        <nav class="" >
+            <div class="container">
+        
+        <div class="navservice">
+               
+              <ul class="navservice">
+                 <li><a class=" "  data-toggle="tab" href="#texte1" >Conseil aux entreprises</a></li>
+                <li><a class=" " href="#texte2"  data-toggle="tab" >Mise en relation</a></li>
+                <li><a class=" " href="#texte3"  data-toggle="tab" >Recherche de partenariat</a></li>
+                <li><a class=" " href="#texte4"  data-toggle="tab" >Réseautage</a></li>
+               </ul>    
+           
+                         
+           	 <div class="tab-content">
+                   
+				   <div class="tab-pane fade in active" id="texte1">
+                            
+							
+                              <center> <img src="{{asset('bundles/acceuil/images/conseilentreprise.png')}}" class="img-responsive" alt="">  </center><br/>
+                                <h4>
+                                    <strong>Conseil aux entreprises </strong>
+                                </h4> <br>
+                                <p align="justify" >* Promotion des relations économiques et commerciales entre les entreprises tunisiennes et suisses (rencontre B to B, Participation aux Journées d’information en Suisse et en Tunisie, Promotion des grands salons professionnels suisses, …)
+												   <br>  
+	* Mise à disposition de toute information d’ordre juridique, économique, fiscale, réglementaire… <br>
+	* Soutien des intérêts de ses adhérents auprès de pouvoirs publics tunisiens.
+</p>
+                        </div>
+						
+                         <div class="tab-pane fade" id="texte2">
+                                      
+							<center>
+                               <img src="{{asset('bundles/acceuil/images/bilaterale.jpg')}}" class="img-responsive" alt=""> </center>
+                                <h4>
+                                    <strong>Mise en relation</strong>
+                                </h4>
+                                <p align="justify" >La Chambre de commerce et d’Industrie Tuniso-Suisse intervient auprès des porteurs de projets pour les mettre en relation avec  les investisseurs, partenaires et institutionnels adaptés à leurs situations.
+</p>
+                        </div>
+						
+                        <div class="tab-pane fade" id="texte3">
+                                      
+							<center>
+                                 <img src="{{asset('bundles/acceuil/images/recrutement.jpg')}}" class="img-responsive" alt="">  </center>
+                                <h4>
+                                    <strong>Recherche de partenariat </strong>
+                                </h4> <br>
+                               <p align="justify" >La CCITNCH veille à soutenir ses membres dans le développement et la concrétisation de leurs projets à travers la recherche de partenaires et sous-traitants selon leurs secteurs d’activité.
+</p>
+                            
+                        </div>
+						
+						 <div class="tab-pane fade" id="texte4">
+                                      
+							<center>
+                                <img src="{{asset('bundles/acceuil/images/reseautage.jpg')}}" class="img-responsive" alt=""> </center>
+                                <h4>
+                                    <strong>Réseautage</strong>
+                                </h4>
+                               <p align="justify" >La Chambre de commerce et d’Industrie Tuniso-Suisse jouit, grâce à ses membres, d’un riche réseau d’affaires établi en Tunisie et en Suisse qu’elle met à la disposition de ses membres en vue de les soutenir à promouvoir et développer leurs activités à travers l’organisation d’évènements et de manifestations.
+								</p>
+                           
+                        </div>
+                 </div>   
+                </div>    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+			</nav>
+            <!-- /.row -->
+        </div>
+		
+		
+
+		<!--</div>-->
+		</section>
+        <!-- /.container -->
+    
+ 
+		 
+{% endblock service %}

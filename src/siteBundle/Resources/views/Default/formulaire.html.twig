@@ -1,0 +1,113 @@
+{% extends "acceuilBundle::layout.html.twig" %}
+{% block formulaire %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>formulaire | CCITNCH</title>
+    
+    <!-- core CSS -->
+    <link href="{{asset('bundles/acceuil/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('bundles/acceuil/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('bundles/acceuil/css/prettyPhoto.css')}}" rel="stylesheet">
+    <link href="{{asset('bundles/acceuil/css/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('bundles/acceuil/css/main.css')}}" rel="stylesheet">
+    <link href="{{asset('bundles/acceuil/css/responsive.css')}}" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="{{asset('bundles/acceuil/images/ico/favicon.ico')}}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{asset('bundles/acceuil/images/ico/apple-touch-icon-144-precomposed.png')}}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{asset('bundles/acceuil/images/ico/apple-touch-icon-114-precomposed.png')}}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{asset('bundles/acceuil/images/ico/apple-touch-icon-72-precomposed.png')}}">
+    <link rel="apple-touch-icon-precomposed" href="{{asset('bundles/acceuil/images/ico/apple-touch-icon-57-precomposed.png')}}">
+</head><!--/head-->
+
+<body>
+<header id="header">
+<div style="background-image: url({{asset('bundles/acceuil/images/slider/bg7.jpg')}}); height:1000px;">
+ <div class="container" >
+<div class="col-sm-12">
+<div id="contact-page clearfix">
+                            <div class="status alert alert-success" style="display: none"></div>
+                            <div class="message_heading">
+                                <h1 style="color:#c52d2f">Formulaire d'inscription</h1>
+                                
+                            </div> 
+      
+                            <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label style="color:#ffffff">Nom  *</label>
+                                            <input type="text" class="form-control" required="required">
+                                        </div>
+										<div class="form-group">
+                                            <label style="color:#ffffff">Prénom  *</label>
+                                            <input type="text" class="form-control" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                         
+                                            <label style="color:#ffffff">Email *</label>
+                                            <input type="email" class="form-control" required="required">
+                                        </div>
+																					 
+										<div class="row">
+										<div class="col col-md-3">
+									    <div class="form-group">  
+                                           <label style="color:#ffffff">Membre *</label>
+										</div>	
+										</div>
+									    <div class="col col-md-3">
+                                             <label style="color:#ffffff">Oui	</label>
+											 <input type="radio" name="membre" value ="oui">
+										</div>	
+										<div class="col col-md-3">										
+										      <label style="color:#ffffff">Non</label>
+												 <input type="radio" name="membre" value ="non">
+										</div>		
+										 
+										</div>
+										
+										<div class="form-group">
+                                            <label style="color:#ffffff">Téléphone </label>
+                                             
+											<input type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"  class="form-control">
+                                        </div> 
+                                        <div class="form-group">
+                                            <label style="color:#ffffff">Entreprise </label>
+                                            <input type="text" class="form-control">
+                                        </div> 
+                                        <div class="form-group">
+                                            <label style="color:#ffffff">Fonction </label>
+                                            <input type="texte" class="form-control">
+                                        </div>  										
+										
+
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-lg" required="required">S'inscrire</button>
+                                        </div>										
+                                    </div>
+                                    
+                                </div>
+                            </form>     
+                        </div><!--/#contact-page-->
+                   
+  </div>
+  </div>
+    </div>
+
+			
+    <script src="{{asset('bundles/acceuil/js/jquery.js')}}"></script>
+    <script type="text/javascript">
+        $('.carousel').carousel()
+    </script>
+    <script src="{{asset('bundles/acceuil/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('bundles/acceuil/js/jquery.prettyPhoto.js')}}"></script>
+    <script src="{{asset('bundles/acceuil/js/jquery.isotope.min.js')}}"></script>
+    <script src="{{asset('bundles/acceuil/js/main.js')}}"></script>
+    <script src="{{asset('bundles/acceuil/js/wow.min.js')}}"></script>
+</body>
+{% endblock formulaire %}

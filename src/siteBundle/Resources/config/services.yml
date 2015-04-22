@@ -1,0 +1,4 @@
+services:
+#    acceuil.example:
+#        class: siteBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

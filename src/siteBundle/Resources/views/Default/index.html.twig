@@ -1,0 +1,466 @@
+{% extends "acceuilBundle::layout.html.twig" %}
+{% block contenu %}
+			
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+        <div class="carousel-inner">
+
+        <div class="item active" style="background-image: url({{asset('bundles/acceuil/images/slider/bg1.jpg')}});">
+ <div class="container">
+ <div class="row slide-margin" style="margin-top: 0px;">
+						
+                          	 <div class="col-sm-6">
+                               <div class="carousel-content">
+                                    <h1 class="animation animated-item-1" style="color:#ffffff">A PROPOS</h1>
+                                    <p class="animation animated-item-2" style= "color:#ffffff;text-align:justify">La Chambre de Commerce et d’Industrie Tuniso-Suisse (CCITNCH) est un organisme indépendant qui œuvre à la promotion des relations économiques et commerciales</p>
+									<p class="animation animated-item-2" id="p1" style= "color:#ffffff;text-align:justify"> dans le cadre d’une approche basée sur l’échange  et le développement des investissements bilatéraux.Les activités de la Chambre sont fondées sur un large réseau d’affaires établi en Tunisie et en Suisse qui, compte tenu des opportunités  d’investissement en Tunisie, vise à enrichir les moyens de coopération tuniso-suisse.
+                                     La CCITNCH est aussi l’interlocuteur privilégié entre les milieux institutionnels et les opérateurs économiques privés tunisiens et suisses à la recherche d’informations, d’assistance ou de conseils en Tunisie ou en Suisse.
+                                     </p>
+								   <a class="btn-slide animation animated-item-3" id="a1" href="#">Lire plus</a>
+							
+                                </div>
+	
+
+<h1 style="color:#ffffff" class="animation animated-item-1">Actualités </h1>
+<marquee behavior="alternate" direction="up" width="80%" >
+<marquee direction="up" scrolldelay="200" scrollamount="3" style="height: 200px;" onmouseover="this.stop();" onmouseout="this.start();">
+<a href='#' class='osx'>
+                               <h3 style="color:#ff1a1a"><b>13/11/2012 La table ronde sur la Pérennisation de l’entreprise familiale.</b></h3>
+                                <p style="color:#ffffff">La table ronde sur la Pérennisation de l’entreprise familiale. Présenté par J. P. Bobst Le 13/11/2012 à l’hôtel Concorde Les Berges du Lac.</p>
+ <i class="fa fa-eye"></i> View</a>	
+
+ 
+		
+<br/>
+ <a href='#' class='osx'>
+		 	                <h3 style="color:#ff1a1a"><b>06/04/2012 La CCITNCH organise un Déjeuner débat </b></h3>
+                               <p style="color:#ffffff">La CCITNCH a organisé un Déjeuner débat le 06/04/2012 ayant pour thème : « La Responsabilisé Sociétale des Entreprises » au Sheraton Tunis Hôtel.</p>
+<i class="fa fa-eye"></i> View</a>                           
+<br/>
+<a href='#' class='osx'>
+						       <h3 style="color:#ff1a1a"> <b>21/02/2013 L’association TUNES lance un cycle de rencontres</b></h3>
+                               <p style="color:#ffffff">L’association TUNES (Tunisiens Universitaires en Suisse) a lancé jeudi soir, 21 février 2013, à l’EPFL (Lausanne) un cycle de rencontres sous le titre de "Tunnovation : Après la révolution, l’innovation». Mr Samir Khoudja Président de la chambre de la CCITNCH a participé à la conférence pour présenter la CCITNCH, avec la participation de Bertrand Fischer et Yassine Allani.</p>
+<i class="fa fa-eye"></i> View</a>
+
+
+
+</marquee>					  
+</marquee>	
+ 
+
+</div>
+	
+
+	
+	
+
+                           
+				<div class="col-sm-6" >	
+				
+				<div	class="col-sm-6">
+						</div>	
+						<div	class="col-sm-6">
+							<a class="btn-slide animation animated-item-3"  href="{{ path('acceuil_membre')}}"  style="    margin-left: 50px;    margin-bottom: 25px;  margin-top: 0px;">Devenir membre
+							</a>
+							 
+                                                       <div id="calendar1"><!--
+                                                                    <div class="calendar-container">
+			<div class="calendar">
+				<header>
+					<h2 class="month"></h2>
+					<a class="btn-prev fontawesome-angle-left" href="#"></a>
+					<a class="btn-next fontawesome-angle-right" href="#"></a>
+				</header>
+				<table>
+					<thead class="event-days">
+						<tr></tr>
+					</thead>
+					<tbody class="event-calendar">
+						<tr class="1"></tr>
+						<tr class="2"></tr>
+						<tr class="3"></tr>
+						<tr class="4"></tr>
+						<tr class="5"></tr>
+					</tbody>
+				</table>
+				<div class="list">
+					<div class="day-event" date-month="3" date-day="4">
+						<a href="#" class="close fontawesome-remove"></a>
+						<h2 class="title">Lorem ipsum 1</h2>
+						<p class="date">2014-12-16</p>
+						<p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+						<label>
+						    <span>Read more!</span>
+						</label>
+					</div>
+					<div class="day-event" date-month="3" date-day="13">
+						<a href="#" class="close fontawesome-remove"></a>
+						<h2 class="title">Lorem ipsum 2</h2>
+						<p class="date">2014-12-16</p>
+						<p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+						<label>
+						    <span>Read more!</span>
+						</label>
+					</div>
+					<div class="day-event" date-month="3" date-day="14">
+						<a href="#" class="close fontawesome-remove"></a>
+						<h2 class="title">Lorem ipsum 3</h2>
+						<p class="date">2014-12-16</p>
+						<p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+						<label>
+						    <span>Read more!</span>
+						</label>
+					</div>
+					<div class="day-event" date-month="3" date-day="16">
+						<a href="#" class="close fontawesome-remove"></a>
+						<h2 class="title">Lorem ipsum 4</h2>
+						<p class="date">2014-12-16</p>
+						<p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+						<label>
+						    <span>Read more!</span>
+						</label>
+					</div>
+					<div class="day-event" date-month="3" date-day="24">
+						<a href="#" class="close fontawesome-remove"></a>
+						<h2 class="title">Lorem ipsum 5</h2>
+						<p class="date">2014-12-16</p>
+						<p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+						<label>
+						    <span>Read more!</span>
+						</label>
+					</div>
+					<div class="day-event" date-month="3" date-day="31">
+						<a href="#" class="close fontawesome-remove"></a>
+						<h2 class="title">Lorem ipsum 6</h2>
+						<p class="date">2014-12-31</p>
+						<p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+						<label>
+						    <span>Read more!</span>
+						</label>
+					</div>
+				</div>
+			</div>-->
+		</div>
+			
+                                                        </div>
+						 </div>
+	
+							</div>		
+	                           
+ </div>  
+ </div>
+ </div>
+
+ <div class="item" style="background-image: url({{asset('bundles/acceuil/images/slider/bg2.jpg')}});">
+                    <div class="container">
+                    <div class="row slide-margin" style="margin-top: 0px;">
+                            <div class="col-sm-6">
+                               <div class="carousel-content">
+                                    <h1 class="animation animated-item-1" style="color:#ffffff">A PROPOS</h1>
+                                     <p class="animation animated-item-2" style= "color:#ffffff;text-align:justify">La Chambre de Commerce et d’Industrie Tuniso-Suisse (CCITNCH) est un organisme indépendant qui œuvre à la promotion des relations économiques et commerciales</p>
+									 <p class="animation animated-item-2" id="p2" style= "color:#ffffff;text-align:justify"> dans le cadre d’une approche basée sur l’échange  et le développement des investissements bilatéraux.Les activités de la Chambre sont fondées sur un large réseau d’affaires établi en Tunisie et en Suisse qui, compte tenu des opportunités  d’investissement en Tunisie, vise à enrichir les moyens de coopération tuniso-suisse.
+                                     La CCITNCH est aussi l’interlocuteur privilégié entre les milieux institutionnels et les opérateurs économiques privés tunisiens et suisses à la recherche d’informations, d’assistance ou de conseils en Tunisie ou en Suisse.
+                                     </p>
+                                   
+								   <a class="btn-slide animation animated-item-3" id="a2" href="#">LIRE PLUS</a>
+				
+                                </div>
+
+<h1 style="color:#ffffff">Actualités </h1>
+<marquee behavior="alternate" direction="up" width="80%" >
+<marquee direction="up" scrolldelay="200" scrollamount="3" style="height: 200px;" onmouseover="this.stop();" onmouseout="this.start();">
+<a href='#' class='osx'>
+                               <h3 style="color:#ff1a1a"><b>13/11/2012 La table ronde sur la Pérennisation de l’entreprise familiale.</b></h3>
+                                <p style="color:#ffffff">La table ronde sur la Pérennisation de l’entreprise familiale. Présenté par J. P. Bobst Le 13/11/2012 à l’hôtel Concorde Les Berges du Lac.</p>
+ <i class="fa fa-eye"></i> View</a>	
+
+ 
+		
+<br/>
+ <a href='#' class='osx'>
+		 	                <h3 style="color:#ff1a1a"><b>06/04/2012 La CCITNCH organise un Déjeuner débat </b></h3>
+                               <p style="color:#ffffff">La CCITNCH a organisé un Déjeuner débat le 06/04/2012 ayant pour thème : « La Responsabilisé Sociétale des Entreprises » au Sheraton Tunis Hôtel.</p>
+<i class="fa fa-eye"></i> View</a>                           
+<br/>
+<a href='#' class='osx'>
+						       <h3 style="color:#ff1a1a"> <b>21/02/2013 L’association TUNES lance un cycle de rencontres</b></h3>
+                               <p style="color:#ffffff">L’association TUNES (Tunisiens Universitaires en Suisse) a lancé jeudi soir, 21 février 2013, à l’EPFL (Lausanne) un cycle de rencontres sous le titre de "Tunnovation : Après la révolution, l’innovation». Mr Samir Khoudja Président de la chambre de la CCITNCH a participé à la conférence pour présenter la CCITNCH, avec la participation de Bertrand Fischer et Yassine Allani.</p>
+<i class="fa fa-eye"></i> View</a>
+
+
+
+</marquee>					  
+</marquee>	
+	
+                            </div>
+                            
+							
+							<div class="col-sm-6" >	
+				
+			   <div	class="col-sm-6"></div>	
+						<div	class="col-sm-6">
+							<a class="btn-slide animation animated-item-3"  href="devenir_membre.html"  style="    margin-left: 50px;    margin-bottom: 25px;  margin-top: 0px;">Devenir membre
+							</a>
+							 
+                             <div id="calendar2"></div>
+						 </div>
+	
+							</div>
+
+
+
+                    </div>
+				    </div>
+ </div><!--/.item-->
+ 
+  <div class="item" style="background-image: url({{asset('bundles/acceuil/images/slider/bg3.jpg')}});">
+            <div class="container">
+                        <div class="row slide-margin" style="margin-top: 0px;">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1" style="color:#ffffff">A PROPOS</h1>
+                                     <p class="animation animated-item-2" style= "color:#ffffff;text-align:justify">La Chambre de Commerce et d’Industrie Tuniso-Suisse (CCITNCH) est un organisme indépendant qui œuvre à la promotion des relations économiques et commerciales</p>
+									 <p class="animation animated-item-2" id="p3" style= "color:#ffffff;text-align:justify"> dans le cadre d’une approche basée sur l’échange  et le développement des investissements bilatéraux.Les activités de la Chambre sont fondées sur un large réseau d’affaires établi en Tunisie et en Suisse qui, compte tenu des opportunités  d’investissement en Tunisie, vise à enrichir les moyens de coopération tuniso-suisse.
+                                     La CCITNCH est aussi l’interlocuteur privilégié entre les milieux institutionnels et les opérateurs économiques privés tunisiens et suisses à la recherche d’informations, d’assistance ou de conseils en Tunisie ou en Suisse.
+                                     </p>
+                                   
+								   <a class="btn-slide animation animated-item-3" id="a3" href="#">LIRE PLUS</a>
+								   
+                                </div>
+
+<h1 style="color:#ffffff">Actualités </h1>
+<marquee behavior="alternate" direction="up" width="80%" >
+<marquee direction="up" scrolldelay="200" scrollamount="3" style="height: 200px;" onmouseover="this.stop();" onmouseout="this.start();">
+<a href='#' class='osx'>
+                               <h3 style="color:#ff1a1a"><b>13/11/2012 La table ronde sur la Pérennisation de l’entreprise familiale.</b></h3>
+                                <p style="color:#ffffff">La table ronde sur la Pérennisation de l’entreprise familiale. Présenté par J. P. Bobst Le 13/11/2012 à l’hôtel Concorde Les Berges du Lac.</p>
+ <i class="fa fa-eye"></i> View</a>	
+
+ 
+		
+<br/>
+ <a href='#' class='osx'>
+		 	                <h3 style="color:#ff1a1a"><b>06/04/2012 La CCITNCH organise un Déjeuner débat </b></h3>
+                               <p style="color:#ffffff">La CCITNCH a organisé un Déjeuner débat le 06/04/2012 ayant pour thème : « La Responsabilisé Sociétale des Entreprises » au Sheraton Tunis Hôtel.</p>
+<i class="fa fa-eye"></i> View</a>                           
+<br/>
+<a href='#' class='osx'>
+						       <h3 style="color:#ff1a1a"> <b>21/02/2013 L’association TUNES lance un cycle de rencontres</b></h3>
+                               <p style="color:#ffffff">L’association TUNES (Tunisiens Universitaires en Suisse) a lancé jeudi soir, 21 février 2013, à l’EPFL (Lausanne) un cycle de rencontres sous le titre de "Tunnovation : Après la révolution, l’innovation». Mr Samir Khoudja Président de la chambre de la CCITNCH a participé à la conférence pour présenter la CCITNCH, avec la participation de Bertrand Fischer et Yassine Allani.</p>
+<i class="fa fa-eye"></i> View</a>
+
+
+
+</marquee>					  
+</marquee>								
+					
+								
+                            </div>
+                         
+							
+							<div class="col-sm-6" >	
+				
+			   <div	class="col-sm-6"></div>	
+						<div	class="col-sm-6">
+							<a class="btn-slide animation animated-item-3"  href="devenir_membre.html"  style="    margin-left: 50px;    margin-bottom: 25px;  margin-top: 0px;">Devenir membre
+							</a>
+							 
+                             <div id="calendar3"></div>
+						 </div>
+	
+							</div>
+
+                        </div>
+				
+		 
+				
+			</div>
+  </div>	
+	
+	<div class="item" style="background-image: url({{asset('bundles/acceuil/images/slider/bg4.jpg')}})">
+            <div class="container">
+                        <div class="row slide-margin" style="margin-top: 0px;">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1" style="color:#ffffff">A PROPOS</h1>
+                                     <p class="animation animated-item-2" style= "color:#ffffff;text-align:justify">La Chambre de Commerce et d’Industrie Tuniso-Suisse (CCITNCH) est un organisme indépendant qui œuvre à la promotion des relations économiques et commerciales</p>
+									 <p class="animation animated-item-2" id="p4" style= "color:#ffffff;text-align:justify"> dans le cadre d’une approche basée sur l’échange  et le développement des investissements bilatéraux.Les activités de la Chambre sont fondées sur un large réseau d’affaires établi en Tunisie et en Suisse qui, compte tenu des opportunités  d’investissement en Tunisie, vise à enrichir les moyens de coopération tuniso-suisse.
+                                     La CCITNCH est aussi l’interlocuteur privilégié entre les milieux institutionnels et les opérateurs économiques privés tunisiens et suisses à la recherche d’informations, d’assistance ou de conseils en Tunisie ou en Suisse.
+                                     </p>
+                                   
+								   <a class="btn-slide animation animated-item-3" id="a4" href="#">LIRE PLUS</a>
+								   
+                                </div>
+
+<h1 style="color:#ffffff">Actualités </h1>
+<marquee behavior="alternate" direction="up" width="80%" >
+<marquee direction="up" scrolldelay="200" scrollamount="3" style="height: 200px;" onmouseover="this.stop();" onmouseout="this.start();">
+<a href='#' class='osx'>
+                               <h3 style="color:#ff1a1a"><b>13/11/2012 La table ronde sur la Pérennisation de l’entreprise familiale.</b></h3>
+                                <p style="color:#ffffff">La table ronde sur la Pérennisation de l’entreprise familiale. Présenté par J. P. Bobst Le 13/11/2012 à l’hôtel Concorde Les Berges du Lac.</p>
+ <i class="fa fa-eye"></i> View</a>	
+
+ 
+		
+<br/>
+ <a href='#' class='osx'>
+		 	                <h3 style="color:#ff1a1a"><b>06/04/2012 La CCITNCH organise un Déjeuner débat </b></h3>
+                               <p style="color:#ffffff">La CCITNCH a organisé un Déjeuner débat le 06/04/2012 ayant pour thème : « La Responsabilisé Sociétale des Entreprises » au Sheraton Tunis Hôtel.</p>
+<i class="fa fa-eye"></i> View</a>                           
+<br/>
+<a href='#' class='osx'>
+						       <h3 style="color:#ff1a1a"> <b>21/02/2013 L’association TUNES lance un cycle de rencontres</b></h3>
+                               <p style="color:#ffffff">L’association TUNES (Tunisiens Universitaires en Suisse) a lancé jeudi soir, 21 février 2013, à l’EPFL (Lausanne) un cycle de rencontres sous le titre de "Tunnovation : Après la révolution, l’innovation». Mr Samir Khoudja Président de la chambre de la CCITNCH a participé à la conférence pour présenter la CCITNCH, avec la participation de Bertrand Fischer et Yassine Allani.</p>
+<i class="fa fa-eye"></i> View</a>
+
+
+
+</marquee>					  
+</marquee>									
+					
+								
+                            </div>
+                           
+		   	<div class="col-sm-6" >	
+				
+			   <div	class="col-sm-6"></div>	
+						<div	class="col-sm-6">
+							<a class="btn-slide animation animated-item-3"  href="devenir_membre.html"  style="    margin-left: 50px;    margin-bottom: 25px;  margin-top: 0px;">Devenir membre
+							</a>
+							 
+                             <div id="calendar4"></div>
+						 </div>
+	
+							</div>
+
+                        </div>
+				
+		 
+				
+			</div>
+  </div>	
+	
+<div class="item" style="background-image: url({{asset('bundles/acceuil/images/slider/bg5.jpg')}});">
+            <div class="container">
+                        <div class="row slide-margin" style="margin-top: 0px;">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1" style="color:#ffffff" id="apropos">A PROPOS</h1>
+                                     <p class="animation animated-item-2" style= "color:#ffffff;text-align:justify">La Chambre de Commerce et d’Industrie Tuniso-Suisse (CCITNCH) est un organisme indépendant qui œuvre à la promotion des relations économiques et commerciales</p>
+									 <p class="animation animated-item-2" id="p5" style= "color:#ffffff;text-align:justify"> dans le cadre d’une approche basée sur l’échange  et le développement des investissements bilatéraux.Les activités de la Chambre sont fondées sur un large réseau d’affaires établi en Tunisie et en Suisse qui, compte tenu des opportunités  d’investissement en Tunisie, vise à enrichir les moyens de coopération tuniso-suisse.
+                                     La CCITNCH est aussi l’interlocuteur privilégié entre les milieux institutionnels et les opérateurs économiques privés tunisiens et suisses à la recherche d’informations, d’assistance ou de conseils en Tunisie ou en Suisse.
+                                     </p>
+                                   
+								   <a class="btn-slide animation animated-item-3" id="a5" href="#">LIRE PLUS</a>
+								   
+                                </div>
+
+<h1 style="color:#ffffff">Actualités </h1>
+<marquee behavior="alternate" direction="up" width="80%" >
+<marquee direction="up" scrolldelay="200" scrollamount="3" style="height: 200px;" onmouseover="this.stop();" onmouseout="this.start();">
+<a href='#' class='osx'>
+                               <h3 style="color:#ff1a1a"><b>13/11/2012 La table ronde sur la Pérennisation de l’entreprise familiale.</b></h3>
+                                <p style="color:#ffffff">La table ronde sur la Pérennisation de l’entreprise familiale. Présenté par J. P. Bobst Le 13/11/2012 à l’hôtel Concorde Les Berges du Lac.</p>
+ <i class="fa fa-eye"></i> View</a>	
+
+ 
+		
+<br/>
+ <a href='#' class='osx'>
+		 	                <h3 style="color:#ff1a1a"><b>06/04/2012 La CCITNCH organise un Déjeuner débat </b></h3>
+                               <p style="color:#ffffff">La CCITNCH a organisé un Déjeuner débat le 06/04/2012 ayant pour thème : « La Responsabilisé Sociétale des Entreprises » au Sheraton Tunis Hôtel.</p>
+<i class="fa fa-eye"></i> View</a>                           
+<br/>
+<a href='#' class='osx'>
+						       <h3 style="color:#ff1a1a"> <b>21/02/2013 L’association TUNES lance un cycle de rencontres</b></h3>
+                               <p style="color:#ffffff">L’association TUNES (Tunisiens Universitaires en Suisse) a lancé jeudi soir, 21 février 2013, à l’EPFL (Lausanne) un cycle de rencontres sous le titre de "Tunnovation : Après la révolution, l’innovation». Mr Samir Khoudja Président de la chambre de la CCITNCH a participé à la conférence pour présenter la CCITNCH, avec la participation de Bertrand Fischer et Yassine Allani.</p>
+<i class="fa fa-eye"></i> View</a>
+
+
+
+</marquee>					  
+</marquee>									
+					
+								
+                            </div>
+                          
+							
+							<div class="col-sm-6" style="margin-top: 50px;">		
+				<div	class="col-sm-3">
+						</div>	
+						<div	class="col-sm-6">
+							<a class="btn-slide animation animated-item-3"  href="#"  style="    margin-left: 50px;    margin-bottom: 25px;  margin-top: 0px;">Devenir membre
+							</a>
+							 
+                             <div id="calendar5"></div>
+							 </div>
+	<div	class="col-sm-3">
+						</div>
+							</div>
+
+                        </div>
+				
+		 
+				
+			</div>
+  </div>	
+		
+  
+         
+		    </div> 
+		   </div>  
+      <!-- modal content -->
+		<div id="osx-modal-content">
+			<div id="osx-modal-title">Actualités</div>
+			<div class="close"><a href="#" class="simplemodal-close">x</a></div>
+			<div id="osx-modal-data">
+				<h3 style="color:#ff1a1a"><b>13/11/2012 La table ronde sur la Pérennisation de l’entreprise familiale.</b></h3>
+                                <p>La table ronde sur la Pérennisation de l’entreprise familiale. Présenté par J. P. Bobst Le 13/11/2012 à l’hôtel Concorde Les Berges du Lac.</br>
+ <img class="img-responsive" src="{{asset('bundles/acceuil/images/tab2.png')}}" style="margin-top:0px;"> </br>
+ <!--<button class="simplemodal-close">Close</button></p>-->
+			</div>
+		</div> 
+
+	  <a class="prev hidden-xs" href="#main-slider" data-slide="prev"  >
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next"  >
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </section><!--/#main-slider-->
+	
+	
+		
+
+     <section id="feature" style="padding-top: 30px;">
+        <div class="container">
+         
+                <h1 style="color:#000000" id="Mot"> Mot du Président </h1>
+             <!--   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>-->
+                                        <div class="media">
+                                           <div class="pull-left">
+                                                <img class="img-responsive" src="{{asset('bundles/acceuil/images/tab2.png')}}" style="margin-top:0px;">
+                                            </div  >
+                                            
+                                             <!--    <h2>Adipisicing elit</h2>-->
+                                                 <p>Chers membres,<br/>
+                                                 C’est avec beaucoup d’enthousiasme et de motivation que j’entame mon mandat à titre de président de la Chambre de commerce et d’industrie Tuniso-Suisse.Avec l’appui du Conseil d’Administration et des membres, je ferai en sorte que la Chambre soit une mine d’information et de ressources pour orienter les promoteurs de projets, les conseiller et les appuyer dans l’atteinte de leurs objectifs et leurs ambitions.
+                                                 La Tunisie compte déjà une centaine d’entreprises suisses parmi lesquelles de grands noms tels que Nestlé, Roche, Novartis, SGS, Bobst Group.
+                                                 Des efforts soutenus seront mis en œuvre pour accroître ce nombre et participer de cette façon à la création de nouveaux emplois pour les jeunes Tunisiens.La Tunisie étant dotée d’un cadre juridique attractif, les investisseurs Suisses peuvent aussi utiliser notre pays comme plate-forme dans le cadre de relations tripartites pour développer de nouveaux marchés en Afrique avec des compétences tunisiennes et le savoir-faire Suisse. C’est là un grand défi et nous sommes prêts à tout mettre en œuvre pour aider les nouveaux venus dans leur démarche.
+                                                 Par ailleurs, nous souhaitons aussi développer des solutions pour aider les producteurs tunisiens à exporter en Suisse, notamment dans les secteurs de niche à forte valeur ajoutée.
+                                                 La chambre peut aussi jouer un rôle d’interface avec les autorités Tunisiennes dans un nombre important de projets, tels que la formation professionnelle de nos jeunes.
+                                                 Nous souhaitons réellement agir en tant que partenaires stratégiques du développement entrepreneurial. C’est ainsi, chers dirigeants d’entreprises, que vous êtes les premiers invités à saisir les nouvelles opportunités offertes par une collaboration accrue avec nos amis Suisses que ce soit sur le marché local, du Maghreb, de l’Afrique ou encore du Moyen-Orient.
+                                                 Nous comptons également entreprendre des actions afin de faciliter l’intégration des jeunes gens d’affaires et des nouveaux entrepreneurs au développement d’un réseau de contacts efficace pour la croissance de leur entreprise. C’est en tissant des liens parmi la communauté que nous bâtirons ensemble un lieu économique enviable et dynamique.
+                                                 <br/><b>Samir Khoudja, le 15 mars 2012<b/>
+                                                  </p>
+                                           
+                                        </div>
+                                            
+                
+			
+        </div>
+                                            
+                                            
+                                            
+    </section><!--/#recent-works-->
+	{% endblock contenu %}

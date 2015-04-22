@@ -1,0 +1,53 @@
+acceuil_homepage:
+    path:     /
+    defaults: { _controller: acceuilBundle:Default:index }
+acceuil_services:
+    path:     /services
+    defaults: { _controller: acceuilBundle:Default:services }
+acceuil_organisation:
+    path:     /organisation
+    defaults: { _controller: acceuilBundle:Default:organisation }
+acceuil_nosevenements:
+    path:     /nosevenements
+    defaults: { _controller: acceuilBundle:Default:nosevenements }
+acceuil_networking:
+    path:     /networking
+    defaults: { _controller: acceuilBundle:Default:networking }
+acceuil_partenariat:
+    path:     /partenariat
+    defaults: { _controller: acceuilBundle:Default:partenariat }
+acceuil_regime:
+    path:     /regime
+    defaults: { _controller: acceuilBundle:Default:regime }
+acceuil_cadre:
+    path:     /cadre
+    defaults: { _controller: acceuilBundle:Default:cadre } 
+acceuil_jsuisse:
+    path:     /jsuisse
+    defaults: { _controller: acceuilBundle:Default:jsuisse } 
+acceuil_jtunis:
+    path:     /jtunis
+    defaults: { _controller: acceuilBundle:Default:jtunis } 
+acceuil_liens:
+    path:     /liens
+    defaults: { _controller: acceuilBundle:Default:liens } 
+acceuil_membre:
+    path:     /membre
+    defaults: { _controller: acceuilBundle:Default:membre } 
+acceuil_contact:
+    path:     /contact
+    defaults: { _controller: acceuilBundle:Default:contact } 
+acceuil_evenement:
+    path:     /evenement
+    defaults: { _controller: acceuilBundle:Default:evenement } 	
+acceuil_formulaire:
+    path:     /formulaire
+    defaults: { _controller: acceuilBundle:Default:formulaire } 	
+acceuil_pdf:
+    path:     /pdf
+    defaults: { _controller: acceuilBundle:Default:pdf }
+download_route:
+    path:     /download/{filename}
+    defaults: { _controller: acceuilBundle:Default:download }
+    
+    
